@@ -1,6 +1,7 @@
 /* 🎨 Variables de color */
 :root {
   --azul-principal: #0074D9;
+  --azul-claro: #56a9fc;
   --azul-oscuro: #003366;
   --cian-acento: #00CFFF;
   --gris-claro: #F2F2F2;
@@ -15,13 +16,10 @@ body {
   background-color: var(--gris-claro);
   color: var(--gris-oscuro);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 82px; /* Espacio para la navbar fija */
 }
 
 /* 🔹 Navbar */
-.navbar {
-  background-color: var(--azul-principal);
-}
-
 .navbar-brand,
 .nav-link {
   color: white !important;
@@ -29,7 +27,7 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--cian-acento); !important;
+  color: var(--cian-acento) !important;
 }
 
 /* Estilo para el logo en la navbar */
@@ -40,7 +38,7 @@ body {
 
 /* Estilo para los enlaces */
 .navbar .nav-link {
-  color: var(--blanco); !important;
+  color: var(--blanco) !important;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -91,10 +89,13 @@ section.bg-white {
 
 /* 🦶 Footer */
 footer {
-  background-color: var(--verde-footer);
+  /*background-color: var(--verde-footer);*/
+  background-color: var(--azul-oscuro); /* azul oscuro MULTECIN */
+  /*
   color: white;
   padding: 20px 0;
   font-size: 0.9rem;
+  */
 }
 
 footer p {
@@ -197,3 +198,30 @@ footer p {
   height: auto;
   width: 256px;
 }
+
+/* 🖱️ Activar dropdown al pasar el mouse */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Control imagen carrusel */
+.carousel-item img {
+  max-height: 510px;
+  object-fit: cover;
+}
+
+/*Textos destacados y normales */
+.texto-destacado {
+  color: var(--azul-principal);
+  font-weight: bold;
+}
+
+.texto-normal {
+  color: var(--azul-principal);
+}
+
+.texto-arriba {
+  color: var(--azul-oscuro);
+}
+

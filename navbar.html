@@ -1,6 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark py-3 shadow-sm">
-  <div class="container-fluid">
 
+
+
+<nav class="navbar navbar-expand-lg navbar-dark py-3 shadow-sm fixed-top" style="background-color: #002147;">
+  <div class="container-fluid">
     <!-- Logo MULTECIN -->
     <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="assets/img/multecin-logo-blanco.png" alt="MULTECIN Logo" class="logo-navbar me-2">
@@ -14,14 +16,25 @@
     <!-- Enlaces -->
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        <!-- Soluciones con submenú -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="soluciones.html" id="solucionesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-lightbulb me-1"></i>Soluciones
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="solucionesDropdown">
+            <li><a class="dropdown-item" href="hvacr.html"><i class="fas fa-snowflake me-2 text-info"></i>HVAC&R</a></li>
+            <li><a class="dropdown-item" href="seguridad.html"><i class="fas fa-shield-alt me-2 text-info"></i>Seguridad</a></li>
+            <li><a class="dropdown-item" href="energia.html"><i class="fas fa-bolt me-2 text-info"></i>Energía</a></li>
+          </ul>
+        </li>
+
+        <!-- Otros enlaces -->
         <li class="nav-item">
-          <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i>Inicio</a>
+          <a class="nav-link" href="productos.html"><i class="fas fa-box-open me-1"></i>Productos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="servicios.html"><i class="fas fa-cogs me-1"></i>Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="nosotros.html"><i class="fas fa-users me-1"></i>Nosotros</a>
+          <a class="nav-link" href="conocenos.html"><i class="fas fa-users me-1"></i>Conócenos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contacto.html"><i class="fas fa-envelope me-1"></i>Contacto</a>
@@ -30,6 +43,3 @@
     </div>
   </div>
 </nav>
-
-
-
