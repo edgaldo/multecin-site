@@ -215,10 +215,12 @@ footer p {
 .texto-destacado {
   color: var(--azul-principal);
   font-weight: bold;
+  font-size: 14pt;
 }
 
 .texto-normal {
   color: var(--azul-principal);
+  font-size: 14pt;
 }
 
 .texto-arriba {
