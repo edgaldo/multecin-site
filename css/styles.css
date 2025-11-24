@@ -223,7 +223,22 @@ footer p {
   font-size: 14pt;
 }
 
+.texto-azul {
+  color: var(--azul-principal);
+}
+
+.texto-azul-destacado {
+  color: var(--azul-principal);
+  font-weight: bold;
+}
+
 .texto-arriba {
   color: var(--azul-oscuro);
+}
+
+.no-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
